@@ -1,0 +1,49 @@
+.threeshowcase {
+	position: relative;
+	height: 600px;
+
+	margin-top: 50px;
+
+	color: #fff;
+	text-transform: uppercase;
+
+}
+.showcase-item {
+	position: relative;
+
+	display: inline-block;
+	width: 33%;
+	height: 500px;
+
+	overflow: hidden;
+}
+
+.show-case-img { 
+	position: absolute;
+	height: 500px; 
+}
+.story-title {
+	position: absolute;
+	z-index: 5;
+
+	top: 50%;
+	left: 22%;
+
+	font-size: 2rem;
+
+	font-weight: 900;
+}
+
+/* responsive three columns area */
+
+@media screen and (max-width: 1010px) {
+	.threeshowcase {
+		width: auto;
+		height: auto;
+	}
+
+	.showcase-item {
+		display: block;
+		width: auto;
+	}
+}

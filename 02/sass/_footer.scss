@@ -1,0 +1,23 @@
+footer {
+	position: relative;
+	width: auto;
+	height: 100px;
+
+	border-top: solid 2px #aaaaaa;
+
+	text-align: center;
+}
+
+.copyright {
+	position: absolute;
+	font-size: 1rem;
+	width: 300px;
+	top: 50%;
+	left: calc((100% - 300px)/2);
+}
+
+@media screen and (max-width: 1010px) {
+	footer {
+		margin-top: 50px;
+	}	
+}

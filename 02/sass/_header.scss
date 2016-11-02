@@ -1,0 +1,181 @@
+/* styling header section */
+
+header{
+	position: relative;
+	height: 500px;
+
+	// setting background
+	background-image: url("../../img/background1.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: .7;
+
+	// set font
+	color: #ffffff;
+
+	text-transform: uppercase;
+}
+
+header a{ color: #ffffff;}
+
+#nav-container, .social { 
+	z-index: 4;
+	max-width: 900px;
+}
+
+#nav-container {
+	position: absolute;
+	
+	width: 50%;
+	height: 400px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (max-width: 690px) {
+		// make social media display below main navigation 
+		width: 100%;
+	}
+
+}
+
+.social{
+	display: block;
+	position: absolute;
+
+	width: auto;
+	height: 90px;
+
+	bottom: 0;
+	right: 10%;
+}
+.social{
+	@media screen and (max-width: 690px) {
+		width: 100%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		right: 0;
+	}
+}
+
+#nav-container h1{
+	font-size: 2rem;
+	font-weight: 600;
+
+	text-align: center;
+
+	margin-top: 50px;
+}
+
+#nav-container p { 
+	text-align: center;
+	line-height: 15px;
+
+	margin-top: 20px;
+}
+
+#nav-container nav ul {
+	margin-top: 50px;
+}
+
+#nav-container nav ul li{
+	display: block;
+
+	width: 200px;
+	height: 30px;
+
+	line-height: 20px;
+	text-align: center;
+
+	border: solid 1px #ffffff;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	-webkit-transition: color 1s ease-in-out, border-color 1s ease-in-out;
+	-moz-transition: color 1s ease-in-out, border-color 1s ease-in-out;
+	-o-transition: color 1s ease-in-out, border-color 1s ease-in-out;
+
+	// -webkit-transition: border-color 1s ease-in-out;
+	// -moz-transition: border-color 1s ease-in-out;
+	// -o-transition: border-color 1s ease-in-out;
+	
+	&:hover{
+		cursor: pointer;
+		border-color: #aaaaaa;
+		color: #aaaaaa;
+	}
+}
+
+/* modifying social media part */
+
+.social p{
+	font-size: 0.9rem;
+}
+
+.social ul{
+	position: absolute;
+	margin-top: 15px;
+	position: absolute;
+
+	right: 0;
+}
+
+.social ul {
+	@media screen and (max-width: 690px){
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.social ul li{
+	float: left;
+}
+
+.social ul li{
+	@media screen and (max-width: 690px){
+		display: inline-block;
+		width: 33%;
+	}
+}
+
+.social ul li img{
+	height: 30px;
+	width: 30px;
+	
+	margin-left: 20px;
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+
+	&:hover{
+		opacity: 0.7;
+	}
+
+	@media screen and (max-width: 690px){
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+
+
+

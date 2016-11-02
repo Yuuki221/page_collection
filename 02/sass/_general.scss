@@ -1,0 +1,29 @@
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+ // remove list style
+li { list-style-type: none; }
+
+a, a:hover{ text-decoration: none; }
+
+
+/* general setting about body */
+body{
+	position: relative;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1rem;
+	width: auto;
+}
+
+.clear{
+	clear: both;
+}
+
+input:focus{
+	outline: none;
+}
+
+.hide { display: none; }
+
+

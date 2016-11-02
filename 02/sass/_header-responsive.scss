@@ -1,0 +1,6 @@
+#nav-container, .social{
+	@media screen and (max-device-width: 600px) and (max-width: 600px) {
+		// make social media display below main navigation 
+		width: 100%;
+	}
+}
